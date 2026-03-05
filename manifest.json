@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Coach",
+  "version": "1.0",
+  "description": "Build better prompts with guidance and structure.",
+  "permissions": ["clipboardWrite"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
