@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide Demo</title>
+    <link rel="stylesheet" href="style-guide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Style Guide</h1>
+            <p class="body-large">A modern, clean design system inspired by simplicity and performance.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Logos -->
+         <section>
+            <h2>Logos & Favicon</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-md);">
+                <div class="logo" style="background-color: var(--color-blue-1); color: var(--color-white); padding: var(--space-md); text-align: center; border-radius: var(--border-radius-md);">
+                    <span>Primary Logo</span>
+                    <img src="./images/logo-blue-bg-white-text.png" class="primary-logo" alt="Brand Logo" style="max-width: 100%; height: auto; margin-top: var(--space-sm);">
+                </div>
+                <div class="logo" style="background-color: var(--color-beige); color: var(--color-black); padding: var(--space-md); text-align: center; border-radius: var(--border-radius-md);">
+                    <span>Secondary Logo</span>
+                    <img src="./images/logo-white-bg-blue-text.png" class="secondary-logo" alt="Brand Logo" style="max-width: 100%; height: auto; margin-top: var(--space-sm);">
+                </div>
+                <div class="logo" style="background-color: transparent; color: var(--color-blue-1); padding: var(--space-md); text-align: center; border-radius: var(--border-radius-md); border: 2px solid var(--color-blue-1);">
+                    <span>Outline Logo</span>
+                    <img src="./images/logo-no-bg-blue-text.png" class="outline-logo"alt="Brand Logo" style="max-width: 100%; height: auto; margin-top: var(--space-sm);">
+                </div>
+            </div>
+         </section>
+
+        <!-- Colors -->
+        <section>
+            <h2>Colors</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: var(--space-md);">
+                <div class="color-swatch" style="background-color: var(--color-blue-1);">
+                    <span>Blue 1<br>#006895</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-blue-2);">
+                    <span>Blue 2<br>#0899ba</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-blue-3);">
+                    <span>Blue 3<br>#20a6b0</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-teal);">
+                    <span>Teal<br>#8ec1b8</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-beige);">
+                    <span>Beige<br>#dfdcd3</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-white); border: 1px solid #ccc;">
+                    <span>White<br>#ffffff</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-black);">
+                    <span>Black<br>#000000</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-ubuntu-orange);">
+                    <span>Ubuntu Orange<br>#ea5321</span>
+                </div>
+            </div>
+            <h3>Semantic Colors</h3>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-md);">
+                <div class="color-swatch" style="background-color: var(--color-primary);">
+                    <span>Primary<br>Blue 1</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-secondary); color: var(--color-black);">
+                    <span>Secondary<br>Beige</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-success);">
+                    <span>Success<br>#28a745</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-error);">
+                    <span>Error<br>#dc3545</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-warning);">
+                    <span>Warning<br>Ubuntu Orange</span>
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-info);">
+                    <span>Info<br>Blue 2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section>
+            <h2>Typography</h2>
+            <h1>Heading 1 - This is a sample H1</h1>
+            <h2>Heading 2 - This is a sample H2</h2>
+            <h3>Heading 3 - This is a sample H3</h3>
+            <h4>Heading 4 - This is a sample H4</h4>
+            <h5>Heading 5 - This is a sample H5</h5>
+            <h6>Heading 6 - This is a sample H6</h6>
+            <p class="body-large">Body Large - This is larger body text for emphasis.</p>
+            <p class="body">Body - This is standard body text.</p>
+            <p class="small">Small - This is smaller text for captions or notes.</p>
+            <p class="caption">Caption - This is the smallest text for fine details.</p>
+        </section>
+
+        <!-- Buttons -->
+        <section>
+            <h2>Buttons</h2>
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-outline">Outline Button</button>
+                <button class="btn btn-ghost">Ghost Button</button>
+                <button class="btn btn-danger">Danger Button</button>
+                <button class="btn btn-primary" disabled>Disabled Primary</button>
+            </div>
+        </section>
+
+        <!-- Forms -->
+        <section>
+            <h2>Forms & Inputs</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option>Select a country</option>
+                        <option>USA</option>
+                        <option>Canada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" class="checkbox"> Agree to terms
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="radio" name="gender" class="radio"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" class="radio"> Female
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <!-- Cards -->
+        <section>
+            <h2>Cards & Containers</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--grid-gap);">
+                <div class="card">
+                    <h3>Card Title</h3>
+                    <p>This is a sample card with some content.</p>
+                </div>
+                <div class="card">
+                    <h3>Another Card</h3>
+                    <p>Hover over this card to see the shadow effect.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shadows -->
+        <section>
+            <h2>Shadows & Elevation</h2>
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                <div class="shadow-sm" style="width: 100px; height: 100px; background: white; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center;">SM</div>
+                <div class="shadow-md" style="width: 100px; height: 100px; background: white; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center;">MD</div>
+                <div class="shadow-lg" style="width: 100px; height: 100px; background: white; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center;">LG</div>
+                <div class="shadow-xl" style="width: 100px; height: 100px; background: white; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center;">XL</div>
+            </div>
+        </section>
+
+        <!-- Icons -->
+        <section>
+            <h2>Icons</h2>
+            <div style="display: flex; gap: var(--space-md); align-items: center;">
+                <i class="icon fas fa-star icon-16"></i>
+                <i class="icon fas fa-star icon-20"></i>
+                <i class="icon fas fa-star icon-24"></i>
+                <i class="icon fas fa-check icon-24"></i>
+                <i class="icon fas fa-home"></i>
+                <i class="icon fas fa-user"></i>
+                <i class="icon far fa-heart"></i>
+            </div>
+        </section>
+
+        <!-- Images -->
+        <section>
+            <h2>Images</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--grid-gap);">
+                <img src="./images/placeholder.jpg" alt="Sample Image" class="aspect-16-9">
+                <img src="./images/placeholder.jpg" alt="Square Image" class="aspect-1-1">
+                <img src="./images/placeholder.jpg" alt="4:3 Image" class="aspect-4-3">
+            </div>
+        </section>
+
+        <!-- Layout -->
+        <section>
+            <h2>Layout System</h2>
+            <h3>12-Column Grid</h3>
+            <div class="grid" style="grid-template-columns: repeat(12, 1fr); gap: var(--grid-gap);">
+                <div style="grid-column: span 4; background: var(--color-teal); color: var(--color-white); padding: var(--space-md);">Span 4</div>
+                <div style="grid-column: span 4; background: var(--color-teal); color: var(--color-white); padding: var(--space-md);">Span 4</div>
+                <div style="grid-column: span 4; background: var(--color-teal); color: var(--color-white); padding: var(--space-md);">Span 4</div>
+            </div>
+            <h3>Responsive Grid</h3>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--grid-gap);">
+                <div style="background: var(--color-beige); color: var(--color-black); padding: var(--space-md);">Auto-fit Item</div>
+                <div style="background: var(--color-beige); color: var(--color-black); padding: var(--space-md);">Auto-fit Item</div>
+                <div style="background: var(--color-beige); color: var(--color-black); padding: var(--space-md);">Auto-fit Item</div>
+            </div>
+            <h3>Flexbox Layout</h3>
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                <div style="flex: 1; background: var(--color-teal); color: var(--color-white); padding: var(--space-md);">Flex 1</div>
+                <div style="flex: 2; background: var(--color-teal); color: var(--color-white); padding: var(--space-md);">Flex 2</div>
+                <div style="flex: 1; background: var(--color-teal); color: var(--color-white); padding: var(--space-md);">Flex 1</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="margin-top: var(--space-lg)">
+        <p>&copy; 2026 Style Guide</p>
+    </footer>
+
+    <style>
+        .color-swatch {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: var(--font-size-small);
+            border-radius: var(--border-radius-md);
+        }
+        .color-swatch span {
+            color: inherit;
+        }
+        .color-swatch[style*="background-color: var(--color-white)"] span,
+        .color-swatch[style*="background-color: var(--color-beige)"] span {
+            color: black;
+        }
+    </style>
+</body>
+</html>
